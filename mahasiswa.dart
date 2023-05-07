@@ -18,9 +18,9 @@ class Mahasiswa {
     print("Ini constructor defaultnya.");
   }
 
-  // Mahasiswa(this.nama, this.jurusan, this.angkatan) {
-  //   print("Ini constructor parameterized.");
-  // }
+  Mahasiswa.namedConstructor(this.nama, this.jurusan, this.angkatan) {
+    print("Ini constructor parameterized.");
+  }
 
   Mahasiswa.fromJson(Map<String, String> json) {
     nama = json['nama'];
